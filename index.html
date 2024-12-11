@@ -9,26 +9,39 @@
 </head>
 <body>
     <header>
-
+        <p>En titel</p>
     </header>
 
     <main>
-        <p>hejsan</p>
-        <div id="comic"></div>
+        <h1>XKCD Viewer</h1>
+        <div id="comic-container">
+          <!-- Serien kommer att visas här -->
+          <h2 id="comic-title"></h2>
+          <p id="comic-date"></p>
+          <img id="comic-image" alt="XKCD Comic">
+          <p id="comic-alt"></p>
+
+        </div>
         <div id="comicNav">
             <ul>
-                <li id="first">First</li>
-                <li id="prev">Prev</li>
-                <li id="random">Random</li>
-                <li id="next">Next</li>
-                <li id="last">Last</li>
+                <li><button id="first">First</button></li>
+                <li><button id="prev-btn">Previous</button></li>
+                <li><button id="next-btn">Next</button></li>
+                <li><button id="random">Random</button></li>
+                <li><button id="last">Last</button></li>
             </ul>
         </div>
+        
+
+
+        <br><br>
+        <p>hejsan main</p>
+        <div id="comic"></div>
     
     </main>
     
     <footer>
-
+        <p>Skapad av Melker Valve, studerande i IT23 på Ålands yrkesgymnasium. Serierna tillhör <a href="https://xkcd.com">XKCD.com</a>.</p>
     </footer>
 
 </body>
