@@ -7,6 +7,10 @@ window.onload = function () {
   getComic("latest");
 
   // Lägg till funktionalitet för navigeringsknappar
+  document.getElementById("first").onclick = function () {
+    getComic(1);
+  };
+  
   document.getElementById("prev-btn").onclick = function () {
     if (currentComic > 1) {
       getComic(currentComic - 1);
@@ -17,6 +21,15 @@ window.onload = function () {
     if (currentComic < maxComic) {
       getComic(currentComic + 1);
     }
+  };
+
+  document.getElementById('random').addEventListener('click', function() {
+    let randomComic = Math.floor(Math.random() * maxComic) + 1;
+    getComic(randomComic);
+  }); 
+
+  document.getElementById("last").onclick = function () {
+    getComic("latest");
   };
 };
 
