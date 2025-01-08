@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mevas XKCD klon</title>
-    <link rel="stylesheet" href="css\main.css"> 
-    <script src="js\comic.js"></script>
+    <link rel="stylesheet" href="css/main.css"> 
+    <script src="js/comic.js"></script>
 </head>
 <body>
 
@@ -14,13 +14,15 @@
     </header>
 
     <main>
-        <figure id="comic-container">
-          <!-- Serien kommer att visas här -->
-          <h2 id="comic-title"></h2>
-          <p id="comic-date"></p>
-          <img id="comic-image" alt="XKCD Comic">
-          <figcaption id="comic-alt"></figcaption>
+        <div id="comic-container">
+            <!-- Serien kommer att visas här -->
+            <h2 id="comic-title">Titel</h2>
+            <p id="comic-date">datum</p>
+          <figure>
+            <img src="placeholder.png" id="comic-image" alt="XKCD Comic">
+            <figcaption id="comic-alt">caption</figcaption>
         </figure>
+        </div>
 
         <div id="comicNav">
             <button id="first">First</button>
@@ -33,8 +35,8 @@
     </main>
     
     <footer>
-        <p id="undertext">Skapad av Melker Valve, studerande i IT23 på Ålands yrkesgymnasium. Serierna tillhör <a href="https://xkcd.com">XKCD.com</a>.</p>
-        <p id="undertext"> <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC info</a></p>
+        <p>Skapad av Melker Valve, studerande i IT23 på Ålands yrkesgymnasium. Serierna tillhör <a href="https://xkcd.com">XKCD.com</a>.</p>
+        <p> <a href="https://creativecommons.org/licenses/by-nc/2.5/">CC info</a></p>
     </footer>
 
 </body>

@@ -33,6 +33,8 @@ window.onload = function () {
   };
 };
 
+
+
 // Funktion för att hämta serie från XKCD API
 function getComic(which) {
   fetch("https://xkcd.vercel.app/?comic=" + which)
@@ -70,8 +72,10 @@ function appendComic(data) {
   img.alt = data.alt;
 
   // Uppdatera serie-beskrivning (alt-text)
-  document.getElementById("comic-alt").textContent = data.alt;
+  document.getElementById("comic-alt").textContent =  data.num;
 
   var formattedDate = `${data.year}-${data.month.padStart(2, '0')}-${data.day.padStart(2, '0')}`;
   document.getElementById("comic-date").textContent = `Published on: ${formattedDate}`;
+
+  
 }
